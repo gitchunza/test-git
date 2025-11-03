@@ -25,7 +25,7 @@ pipeline {
         stage('Verify Deployment') {
             steps {
                 // Nginx 컨테이너 내부 네트워크를 통해 배포 확인
-                sh 'curl http://nginx/index.html | grep "Welcome"'
+                sh 'curl http://nginx/index.html | grep "Successful"'
             }
         }
     }
