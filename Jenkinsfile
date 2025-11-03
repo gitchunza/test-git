@@ -6,7 +6,7 @@ pipeline {
             steps {
                 // 이 단계에서 Jenkins는 Git 저장소 전체를 워크스페이스로 가져옵니다.
                 // YOUR_GIT_REPOSITORY_URL은 Jenkins Item 설정에서 정의되므로 생략합니다.
-                git branch: 'main' // 자격 증명 ID를 사용하거나 생략
+                checkout scm // 자격 증명 ID를 사용하거나 생략
             }
         }
 
